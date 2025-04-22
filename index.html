@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple HTML Form</title>
+</head>
+<body>
+
+    <h2>Contact Form</h2>
+
+    <form action="/submit-form" method="post">
+    <div>Name: <input type="text" name="name" placeholder="Your Name" required></div>
+     Email: <input type="email" name="email" placeholder="Your Email" required>  
+    SUB: <input type="text" name="subject" placeholder="Subject" readonly>
+    <input type="password" placeholder="Password"  required>
+    <div>
+        <input type ="radio" value="x1" name="class">class x1
+        <input type ="radio" value="x2" name="class">class x2
+    </div>
+  
+    <label for="math">
+       
+        <input type="checkbox"  id="math" name="math" value="Math">:MATH <br>
+    </label>
+    <label for="science">
+        <input type="checkbox" id="science" name="science" value="Science">:SCIENCE <br>
+    </label>
+    <label for="english">
+        <input type="checkbox" id="english" name="english" value="English"> :ENGLISH <br>
+    </label>
+    textarea: <textarea name="message" rows="5" cols="40" placeholder="Your Message"></textarea><br>
+    <input type="submit" value="Submit">
+    <br>
+    <h2>enter your city name</h2>
+    <select name="city" id="city">
+        <option value="Kathmandu">karachi</option>
+        <option value="Bhaktapur">tandojam</option>
+        <option value="Lalitpur">hyd</option>
+    </select>
+    
+    </form>
+
+</body>
+</html>
