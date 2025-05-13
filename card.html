@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Deals</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  background-color: rgb(15, 53, 47);
+  padding: 20px;
+  width: 400px;
+  margin:80px auto;
+  border-radius: 1px;
+ 
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.grid {
+ display: grid;
+ 
+  grid-template-columns: repeat(2,1fr);
+  gap: 4px;
+
+}
+.item img {
+  width: 100%;
+  border-radius: 1px;
+}
+
+.item p {
+ font-size: 15px;
+ align-items: center;
+ margin-top: 8px;
+}
+
+.deals-link {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);  
+  font-size: 20px;
+
+
+ 
+}
+
+.deals-link:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+  </style> 
+</head>
+<body>
+  <div class="container">
+    <h2>Shop deals in Fashion</h2>
+    <div class="grid">
+       <div class="item">
+         <img src="linux.jpeg" alt="Jeans">
+       
+        <p>Jeans under $50</p>
+    </div>
+    <div class="item">
+         <img src="linux.jpeg" alt="Jeans">
+        <p>Jeans under $77</p>
+    </div>
+    <div class="item">
+         <img src="linux.jpeg" alt="Jeans">
+        <p>Jeans under $60</p>
+    </div>
+    <div class="item">
+         <img src="linux.jpeg" alt="Jeans">
+        <p>Jeans under $20</p>
+    </div>
+    <div class="item">
+         <img src="linux.jpeg" alt="Jeans">
+        <p>Jeans under $20</p>
+    </div>
+    <div class="item">
+         <img src="linux.jpeg" alt="Jeans">
+        <p>Jeans under $20</p>
+    </div>
+    
+    </div> 
+    <a href="#" class="deals-link">See all deals</a>
+  </div>
+</body>
+</html>
+<!-- 💡 What is grid in CSS?
+grid is a CSS layout system that allows you to design web pages using rows and columns. It’s especially powerful for building responsive, two-dimensional layouts (both horizontal and vertical) with precision and flexibility. -->
+<!-- ✅ Basic Concept:
+Think of a grid like a table:
+
+Rows = horizontal lines
+
+Columns = vertical lines
+
+Cells = content boxes (like images, text, buttons)
+
+CSS Grid lets you place items in these cells easily. -->
+<!-- 🎯 When to Use CSS Grid:
+You need a two-dimensional layout
+
+You want clean code for complex designs
+
+You want precise control over layout alignment -->
