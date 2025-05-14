@@ -1,0 +1,89 @@
+<!-- The position property in CSS is used to specify how an element is positioned in a document. It works with the properties top, right, bottom, and left to move the element relative to a specified context.
+
+Here are the main values of the position property: -->
+
+<!-- 1. static (default)
+Behavior: Elements are positioned according to the normal document flow.
+
+Top/Right/Bottom/Left: Not affected.
+
+Use case: Default behavior for most elements. -->
+
+<!-- 2. relative
+Behavior: The element is positioned relative to its normal position.
+
+Top/Right/Bottom/Left: Offset the element from where it would normally be.
+
+Use case: Slight adjustments from the original position.
+ -->
+<!-- 3. absolute
+Behavior: The element is positioned relative to the nearest positioned (not static) ancestor.
+
+Top/Right/Bottom/Left: Fully control position.
+
+Use case: Floating elements in a specific container. -->
+<!-- 
+4. fixed
+Behavior: The element is positioned relative to the browser window (viewport).
+
+Top/Right/Bottom/Left: Always visible in the same position, even when scrolling.
+
+Use case: Sticky headers, footers, or floating buttons. -->
+<!-- 
+5. sticky
+Behavior: Switches between relative and fixed, depending on scroll position.
+
+Use case: Elements that stick when you scroll past them. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postion property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            width: 80vw;
+            height: 500px;
+            padding: 4px;
+            margin: 4px;
+
+
+        }
+        .box1{
+            background-color: aquamarine;
+           
+        }
+        .box2
+    {
+        background-color: lightblue;
+        position: fixed
+        ;
+    }
+    .box3{
+        background-color: lightgreen;
+        position: relative;
+        top: 20px;
+        left: 300px;
+    }
+    .box4{
+        background-color: lightcoral;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+    
+    
+</body>
+</html>
